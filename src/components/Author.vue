@@ -1,19 +1,23 @@
 <template>
 	<div class="author">
 
-		<g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="180" height="180" blur="5" />
+		<!-- <g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="180" height="180" blur="5" /> -->
 
 		<h1 v-if="showTitle" class="author__site-title">
-			{{ $static.metadata.siteName }}
+			Lucas Johnson
 		</h1>
 
 		<p class="author__intro">
-			A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+			I'm a Front End Developer based in Toronto, Canada who is too busy with clients to build my own site.
+		</p>
+
+		<p class="author__intro">
+			If you want something to look at I was part of the team that launched this incredible site: <a href="https://www.omen.com/" target="_black" rel="noopener noreferrer" title="OMEN.com opens in new tab">OMEN.com</a>
 		</p>
 
 		<p class="author__links">
-			<a href="//twitter.com/gridsome">Follow on Twitter</a>
-			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>
+			<a href="https://github.com/lucasjohnson" target="_black" rel="noopener noreferrer" title="GitHub opens in new tab">GitHub</a>
+			<a href="https://www.linkedin.com/in/lucasjohnsonwebdeveloper/" target="_black" rel="noopener noreferrer" title="LinkedIn opens in new tab">LinkedIn</a>
 		</p>
 
 	</div>
