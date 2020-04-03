@@ -1,23 +1,23 @@
 <template>
 	<div class="author">
 
-		<!-- <g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="180" height="180" blur="5" /> -->
+		<g-image alt="Author image" class="author__image" src="~/assets/images/author.png" width="180" height="180" blur="5" />
 
 		<h1 v-if="showTitle" class="author__site-title">
 			Lucas Johnson
 		</h1>
 
 		<p class="author__intro">
-			I'm a Front End Developer based in Toronto, Canada who is too busy with clients to build my own site.
+			Front End Developer too busy to build his own site.
 		</p>
 
 		<p class="author__intro">
-			If you want something to look at I was part of the team that launched this incredible site: <a href="https://www.omen.com/" target="_black" rel="noopener noreferrer" title="OMEN.com opens in new tab">OMEN.com</a>
+			Recently launched this incredible site with the team at MediaMonks: <a href="https://www.omen.com/" target="_black" rel="noopener noreferrer" title="OMEN.com opens in new tab">OMEN.com</a>
 		</p>
 
 		<p class="author__links">
 			<a href="https://github.com/lucasjohnson" target="_black" rel="noopener noreferrer" title="GitHub opens in new tab">GitHub</a>
-			<a href="https://www.linkedin.com/in/lucasjohnsonwebdeveloper/" target="_black" rel="noopener noreferrer" title="LinkedIn opens in new tab">LinkedIn</a>
+			<a href="https://twitter.com/_lucasjohnson" target="_black" rel="noopener noreferrer" title="Twitter opens in new tab">Twitter</a>
 		</p>
 
 	</div>
