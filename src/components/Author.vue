@@ -16,8 +16,12 @@
 		</p>
 
 		<p class="author__links">
-			<a href="https://github.com/lucasjohnson" target="_black" rel="noopener noreferrer" title="GitHub opens in new tab">GitHub</a>
-			<a href="https://twitter.com/_lucasjohnson" target="_black" rel="noopener noreferrer" title="Twitter opens in new tab">Twitter</a>
+			<a href="https://github.com/lucasjohnson" target="_black" rel="noopener noreferrer" title="GitHub opens in new tab">
+				<font-awesome :icon="['fab', 'github']"/>
+			</a>
+			<a href="https://twitter.com/_lucasjohnson" target="_black" rel="noopener noreferrer" title="Twitter opens in new tab">
+				<font-awesome :icon="['fab', 'twitter']"/>
+			</a>
 		</p>
 
 	</div>
