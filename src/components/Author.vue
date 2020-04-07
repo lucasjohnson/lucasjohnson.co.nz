@@ -19,6 +19,10 @@
 			<a href="https://github.com/lucasjohnson" target="_black" rel="noopener noreferrer" title="GitHub opens in new tab">
 				<font-awesome :icon="['fab', 'github']"/>
 			</a>
+
+			<a href="https://codesandbox.io/u/lucasjohnson" target="_black" rel="noopener noreferrer" title="CodeSandbox opens in new tab">
+				<font-awesome :icon="['fab', 'codepen']"/>
+			</a>
 			<a href="https://twitter.com/_lucasjohnson" target="_black" rel="noopener noreferrer" title="Twitter opens in new tab">
 				<font-awesome :icon="['fab', 'twitter']"/>
 			</a>
