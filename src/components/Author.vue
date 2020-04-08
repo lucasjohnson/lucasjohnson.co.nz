@@ -20,7 +20,7 @@
 				<font-awesome :icon="['fab', 'github']"/>
 			</a>
 
-			<a href="https://codesandbox.io/u/lucasjohnson" target="_black" rel="noopener noreferrer" title="CodeSandbox opens in new tab">
+			<a href="https://codepen.io/lucasjohnson" target="_black" rel="noopener noreferrer" title="CodePen opens in new tab">
 				<font-awesome :icon="['fab', 'codepen']"/>
 			</a>
 			<a href="https://twitter.com/_lucasjohnson" target="_black" rel="noopener noreferrer" title="Twitter opens in new tab">
