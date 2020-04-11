@@ -1,0 +1,50 @@
+.blogBanner {
+  padding: 0 0 2.5rem;
+}
+
+.postWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+
+  @media(min-width: $screen-desktop) {
+    justify-content: space-between;
+    flex-direction: unset;
+    padding: 0;
+  }
+
+  .post {
+    width: 100%;
+    color: $base-font-color;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px 0 rgba(14, 30, 37, 0.1);
+    background-color: #fff;
+    transition: box-shadow $base-timing $base-duration;
+
+    &:hover {
+      box-shadow: 0 0px 40px 0 rgba(14, 30, 37, 0.1);
+    }
+
+    @media(min-width: $screen-desktop) {
+      width: 30%;
+    }
+
+    .postCopy {
+      padding: 1rem;
+
+        .postTitle {
+          font-size: 1rem;
+        }
+
+        .postExcerpt {
+          font-size: 0.8rem;
+        }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.Header {
+  font-family: $heading-font-family;
+  padding: 2rem 0 4rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: all $base-timing $base-duration;
+
+    &.right:hover {
+      background-color: #fff;
+      color: $site-accent;
+    }
+  }
+
+  a:after {
+    display: none;
+  }
+
+  a.siteHeader {
+    border-color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $dark-mode-font-color;
+
+    &:hover {
+      color: $dark-mode-font-color;
+    }
+  }
+}

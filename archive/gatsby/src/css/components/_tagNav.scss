@@ -1,0 +1,12 @@
+.TagNav {
+
+  a,
+  a:hover {
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  a::after {
+    display: none;
+  }
+}

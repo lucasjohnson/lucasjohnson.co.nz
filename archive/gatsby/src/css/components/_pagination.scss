@@ -1,0 +1,27 @@
+.pagination {
+  overflow: hidden;
+  text-align: center;
+
+  .paginationItems {
+    width: 100%;
+    padding: 0;
+    // margin: 2rem 0 0 0;
+    display: inline-block;
+
+    .paginationItem {
+
+      &.prev { float: left; }
+      &.next { float: right; }
+
+      .paginationLink,
+      .paginationLink:hover {
+        color: $dark-gray;
+        text-decoration: none;
+
+        @media (prefers-color-scheme: dark) {
+          color: $dark-mode-font-color;
+        }
+      }
+    }
+  }
+}

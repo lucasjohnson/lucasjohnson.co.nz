@@ -1,0 +1,45 @@
+.footer {
+  padding: 7rem 1rem;
+
+  a::after {
+    background-color: #fff;
+    height: 1px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .socialItems {
+    margin: 2.5rem 0 3rem;
+
+    .socialItem {
+
+      color: #fff;
+
+      &:hover {
+        color: $site-accent;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      span {
+        width: 1rem;
+        height: 1rem;
+        display: inline;
+        color: #fff;
+        border-radius: 50%;
+        border: 1.5px solid #fff;
+        padding: 0.75rem;
+        transition: all $base-timing $base-duration;
+
+        &:hover {
+          background-color: #fff;
+          color: $site-accent;
+        }
+      }
+    }
+  }
+}

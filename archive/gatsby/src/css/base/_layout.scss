@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  background-color: $viewport-background-color;
+  font-size: 20px;
+  background-color: $site-accent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $viewport-background-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #000;
+  }
+}
+
+#mainContent {
+  min-height: calc(100vh - 503px);
+  background-color: $site-background;
+  background: $site-background;
+}
+
+.siteAccent {
+  background-color: $site-accent;
+  color: #fff;
+
+  // background: #091d79;
+  // background: linear-gradient(140deg,#091d79 53%,#4e025a 95%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+
+  &.withPadding {
+    padding: 4rem 1rem 5rem;
+  }
+
+  &.withCopy {
+    max-width: 800px;
+    padding-bottom: 3rem;
+  }
+
+  .left {
+    position: relative;
+    left: 0;
+    top: 0
+  }
+
+  .right {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+  }
+}
+
+
+.centered {
+  text-align: center;
+  font-family: $body-font-family;
+}
+
+.contentWrapper {
+  padding: $content-wrapper-padding-mobile;
+
+  @media (min-width: $screen-desktop) {
+    padding: $content-wrapper-padding-desktop;
+  }
+}

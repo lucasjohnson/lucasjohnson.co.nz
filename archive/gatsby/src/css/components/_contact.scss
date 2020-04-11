@@ -1,0 +1,53 @@
+.contactWrapper {
+  align-items: center;
+  justify-content: space-between;
+  background-color: $dark-gray;
+  color: #fff;
+  overflow: hidden;
+  padding: 2.5rem 3rem 3rem;
+  margin: 0 auto;
+  position: relative;
+
+  @media(min-width: $screen-desktop) {
+    display: flex;
+    bottom: -4.5rem;
+    border-radius: 12px;
+  }
+
+  .contactItem {
+    width: 100%;
+
+    @media(min-width: $screen-desktop) {
+      width: 30%;
+    }
+
+    .contactTitle {
+      margin: 0;
+    }
+
+    .contactCopy {
+      margin: 0 0 2rem;
+      @media(min-width: $screen-desktop) {
+        margin: 0;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid $site-accent;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      transition: all $base-timing $base-duration;
+
+      &:hover {
+        background-color: $site-accent;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+$_button-background-color: $action-color;
+$_button-background-color-hover: shade($action-color, 20%);
+
+#{$all-buttons} {
+  appearance: none;
+  background-color: transparent;
+  // border: 0;
+  // border-radius: $base-border-radius;
+  // color: contrast-switch($_button-background-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  padding: 0.75rem 1.25rem;
+  border: 2px solid $site-accent;
+  border-radius: 50px;
+  transition: all ease 500ms;
+  color: $site-accent;
+  font-family: $heading-font-family;
+
+  &:hover {
+    // background-color: $_button-background-color-hover;
+    // color: contrast-switch($_button-background-color-hover);
+    background: $site-accent;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $_button-background-color;
+    }
+  }
+}

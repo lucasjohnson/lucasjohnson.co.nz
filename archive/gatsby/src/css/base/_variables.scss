@@ -1,0 +1,54 @@
+// Typography
+$base-font-family: Georgia, Times, serif;
+$heading-font-family: Roboto, sans-serif;
+$body-font-family: Roboto, sans-serif;
+$blog-heading-font-family: Futura, Helvetica, san-serif;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 2.6rem;
+$small-spacing: $base-spacing / 1.8;
+$base-z-index: 0;
+
+// Colors
+$violet: #8C43FF;
+$pink: rgba(255,29,142,1);
+$light-blue: #1dcaff;
+$dark-gray: #293347;
+$medium-gray: #999;
+$light-gray: #374348;
+$light-blue-gray: #f6f8fa;
+$blue-gray: #293347;
+
+// Font Colors
+$base-font-color: $blue-gray;
+$action-color: $light-blue;
+$dark-mode-font-color: #fff;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: #fff;
+$site-accent: $violet;
+$site-background :#fff;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 500ms;
+$base-timing: ease;
+
+// Layouts
+
+$content-wrapper-padding-mobile: 1rem;
+$content-wrapper-padding-desktop: 3rem 7rem 0;

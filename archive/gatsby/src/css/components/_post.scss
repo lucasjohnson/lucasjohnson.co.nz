@@ -1,0 +1,159 @@
+.Post {
+
+  .brew {
+    padding: 4rem 0;
+    display: block;
+    text-align: center;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+    img {
+      width: 30%;
+      display: inline-block;
+
+      @media(min-width: $screen-desktop) {
+        width: 10rem;
+      }
+    }
+  }
+
+  position: relative;
+  z-index: 10;
+
+  @media(min-width: $screen-desktop) {
+    top: -2rem;
+    box-shadow: 0 0px 6px 0 rgba(14, 30, 37, 0.1);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: none;
+    width: 20px;
+    height: 900px;
+    background: rgba(39,44,49,.08);
+    filter: blur(9px);
+
+    @media(min-width: $screen-desktop) {
+      display: block;
+    }
+  }
+
+  &:before {
+    left: -3px;
+    transform: rotate(-1deg);
+  }
+
+  &:after {
+    right: -3px;
+    transform: rotate(1deg);
+  }
+
+  .postHeader {
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: $site-background;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+    .postTitle {
+      font-family: $blog-heading-font-family;
+      margin: 0;
+    }
+
+    .postDate {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0 0 1.8rem;
+      font-family: $heading-font-family;
+    }
+  }
+
+  .postContent {
+    background-color: $site-background;
+    position: relative;
+
+    .postExcerpt {
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      list-style: initial;
+      margin: 0 0 $small-spacing $small-spacing;
+      float: none;
+
+      li {
+        display: list-item;
+        margin: 0 0 5px;
+
+
+      }
+    }
+
+    blockquote {
+      padding-left: 1rem;
+      border-left: 3px solid #ccc;
+      margin: 0 20px;
+    }
+  }
+}
+
+.postTag {
+  color: $site-accent;
+}
+
+.postLink {
+  text-decoration: none;
+}
+
+code {
+  font-size: 0.7rem;
+  color: $base-font-color;
+  background-color: #f6f8fa;
+  display: inline-block;
+  padding: 0px 6px;
+}
+
+pre {
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: $blue-gray;
+  border-radius: 4px;
+  word-break: break-all;
+  white-space: normal;
+  border-left: 3px solid $pink;
+
+  code {
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 1rem 0.4rem;
+    display: block;
+    position: relative;
+    background-color: $blue-gray;
+
+    [class^="language-"] {
+      display: block;
+    }
+
+    &.language-bash:after {
+      content: 'bash';
+      font-size: 0.6rem;
+      color: $base-font-color;
+      display: inline-block;
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      padding: 0px 5px;
+      background-color: $light-blue-gray;
+    }
+  }
+}
